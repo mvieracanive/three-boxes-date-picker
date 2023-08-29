@@ -1,14 +1,19 @@
 {
   "name": "3-boxes-date-picker",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "Three boxes date picker for ReactJS",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpackPublish.config.js",
     "start": "webpack serve --open"
   },
   "keywords": [],
-  "author": "",
+  "author": "Maia Viera Cañive",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvieracanive/react-component-publisher.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^18.2.21",
@@ -20,7 +25,11 @@
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "@material-ui/core": "^4.12.4",
+    "moment": "^2.29.4"
   },
-  "dependencies": {}
+  "dependencies": {    
+    
+  }
 }

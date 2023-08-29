@@ -1,5 +1,7 @@
 import React from "react";
 import reactDom from "react-dom";
+import { ThreeBoxesDatePicker } from "./lib/three-boxes-date-picker";
+import { Box } from '@material-ui/core'
 
 function component() {
     const element = document.createElement('div');
@@ -13,11 +15,14 @@ function component() {
   document.body.appendChild(component());
   
   const App = () =>{
-      return (
+      return <>
           <h1>
               Welcome to React App thats build using Webpack and Babel separately
           </h1>
-      )
+          <Box width={'100%'}>
+            <ThreeBoxesDatePicker />
+          </Box>
+        </>
   }
   
   reactDom.render(<App />, document.getElementById("root"))
